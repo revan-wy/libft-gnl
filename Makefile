@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: revan-wy <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: revan-wy <revan-wy@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/02/26 18:47:55 by revan-wy          #+#    #+#              #
-#    Updated: 2018/08/09 18:24:00 by revan-wy         ###   ########.fr        #
+#    Updated: 2018/08/16 12:58:17 by revan-wy         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -106,4 +106,4 @@ local:
 	gcc $(FLAGS) main.c
 
 norm:
-	norminette *.c *.h
+	norminette *.c *.h | grep -B 1 -e Error | head -30
